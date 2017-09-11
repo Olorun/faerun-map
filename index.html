@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>The Sword Coast (Map by Mike Schley, prepared with PS_Bramus.GoogleMapsTileCutter)</title>
+		<title>PS_Bramus.GoogleMapsTileCutter</title>
 		<meta charset="utf-8" />
 		<style>
 			html, body {
@@ -24,8 +24,9 @@
 	</head>
 	<body>
 		<div id="map"><span class="loading">loading tiles...</span></div>
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5ggFs_0ydVB__XuatCyqtoNQ-m5mq8AY"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script>
+
 
 			/*
 			 * = PS_Bramus.GoogleMapsTileCutter Config
@@ -81,20 +82,20 @@
 						getTileUrl: function(coord, zoom) {
 							var normalizedCoord = getNormalizedCoord(coord, zoom);
 							if(normalizedCoord && (normalizedCoord.x < Math.pow(2, zoom)) && (normalizedCoord.x > -1) && (normalizedCoord.y < Math.pow(2, zoom)) && (normalizedCoord.y > -1)) {
-								return 'images/' + zoom + '_' + normalizedCoord.x + '_' + normalizedCoord.y + '.jpg';
+								return zoom + '_' + normalizedCoord.x + '_' + normalizedCoord.y + '.jpg';
 							} else {
-								return 'images/empty.jpg';
+								return 'empty.jpg';
 							}
 						},
 						tileSize: new google.maps.Size(256, 256),
-						maxZoom: 6,
+						maxZoom: 4,
 						name: 'PS_Bramus.GoogleMapsTileCutter'
 					});
 
 					// Basic options for our map
 					var myOptions = {
 						center: new google.maps.LatLng(0, 0),
-						zoom: 3,
+						zoom: 2,
 						minZoom: 0,
 						streetViewControl: false,
 						mapTypeControl: false,
