@@ -1,7 +1,7 @@
 # Interactive map of the Sword Coast
 
-This is an interactive map of the Sword Coast, created by
-[Mike Schley](http://mikeschley.com/)
+This is an interactive map of Faerun, created by ??
+[Mike Schley](http://mikeschley.com/) (CHANGE THIS PART LATER)
 available from its official source and owner,
 [Wizards of the Coast LLC](http://dnd.wizards.com/articles/features/map-faer%C3%BCn)
 
@@ -10,7 +10,7 @@ Mike Schley or Wizards of the Coast LLC.
 
 ## Example
 
-See live demo at https://ceeekay.github.io/sword-coast-map/
+See live demo at https://Olorun.github.io/sword-coast-map/
 
 ## Tools
 
