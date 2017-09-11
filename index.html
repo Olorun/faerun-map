@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>PS_Bramus.GoogleMapsTileCutter</title>
+		<title>Faerun (map by )</title>
 		<meta charset="utf-8" />
 		<style>
 			html, body {
@@ -82,9 +82,9 @@
 						getTileUrl: function(coord, zoom) {
 							var normalizedCoord = getNormalizedCoord(coord, zoom);
 							if(normalizedCoord && (normalizedCoord.x < Math.pow(2, zoom)) && (normalizedCoord.x > -1) && (normalizedCoord.y < Math.pow(2, zoom)) && (normalizedCoord.y > -1)) {
-								return zoom + '_' + normalizedCoord.x + '_' + normalizedCoord.y + '.jpg';
+								return 'images/' + zoom + '_' + normalizedCoord.x + '_' + normalizedCoord.y + '.jpg';
 							} else {
-								return 'empty.jpg';
+								return 'images/' + 'empty.jpg';
 							}
 						},
 						tileSize: new google.maps.Size(256, 256),
