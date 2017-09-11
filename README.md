@@ -10,7 +10,7 @@ Mike Schley or Wizards of the Coast LLC.
 
 ## Example
 
-See live demo at https://Olorun.github.io/sword-coast-map/
+See live demo at https://olorun.github.io/faerun-map/
 
 ## Tools
 
